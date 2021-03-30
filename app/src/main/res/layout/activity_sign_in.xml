@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/login"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:src="@drawable/login"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome!"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="@color/darkblue"
+            android:fontFamily="@font/font"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select your vehicle to continue"
+            android:textColor="@color/gray"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/font"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txt_registration_no"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="375dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/textbox"
+        android:hint="Registration No"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:paddingLeft="16dp"
+        android:fontFamily="@font/font"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_in"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_arrow_forward_24"
+        android:background="@drawable/buttonback"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <TextView
+        android:id="@+id/dont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Still haven't add yours?"
+        android:textColor="@color/gray"
+        android:textSize="18sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="575dp"
+        android:fontFamily="@font/font"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Add your vehicle"
+        android:textSize="18sp"
+        android:textColor="@color/darkblue"
+        android:textStyle="bold"
+        android:layout_marginTop="575dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/dont"
+        android:clickable="true"
+        android:onClick="addNewVehicle"
+        android:fontFamily="@font/font"
+        />
+
+
+</RelativeLayout>

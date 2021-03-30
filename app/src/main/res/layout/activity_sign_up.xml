@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/back">
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="35sp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        android:layout_marginTop="25sp"
+        android:layout_marginLeft="16dp"
+        android:clickable="true"
+        android:onClick="back"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/illustration"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Profile"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginTop="25sp"
+            android:textColor="@color/darkblue"
+            android:fontFamily="@font/font"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add your vehicle to get notified"
+            android:textSize="18sp"
+            android:textColor="@color/gray"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/font"/>
+
+        <EditText
+            android:id="@+id/reg_no"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/textbox"
+            android:hint="Vehicle Registration No"
+            android:textColor="@color/black"
+            android:textAlignment="inherit"
+            android:textColorHint="@color/gray"
+            android:paddingLeft="16dp"
+            android:fontFamily="@font/font"/>
+
+        <EditText
+            android:id="@+id/make"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/textbox"
+            android:hint="Make"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:paddingLeft="16dp"
+            android:fontFamily="@font/font"/>
+
+        <EditText
+            android:id="@+id/model"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/textbox"
+            android:hint="Model"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:paddingLeft="16dp"
+            android:fontFamily="@font/font"/>
+
+        <EditText
+            android:id="@+id/mileage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/textbox"
+            android:hint="Mileage (KM)"
+            android:textColor="@color/black"
+            android:textAlignment="inherit"
+            android:textColorHint="@color/gray"
+            android:paddingLeft="16dp"
+            android:fontFamily="@font/font"/>
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Add Vehicle"
+            android:background="@drawable/buttonback"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/font"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

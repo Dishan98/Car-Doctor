@@ -1,0 +1,259 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <ImageView
+        android:id="@+id/car_image"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:src="@drawable/form"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/car_image"
+        android:text="Vehicle Details"
+        android:textColor="@color/darkblue"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="0dp"
+        android:fontFamily="@font/font"
+        />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:id="@+id/oil_filter_date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/textbox"
+                android:textColor="@color/black"
+                android:hint="Date of last oil filter change"
+                android:textColorHint="@color/gray"
+                android:cursorVisible="false"
+                android:paddingLeft="16dp"
+                android:fontFamily="@font/font"
+                android:focusable="false"
+                />
+
+            <EditText
+                android:id="@+id/air_filter_date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/textbox"
+                android:hint="Date of last air filter change"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:paddingLeft="16dp"
+                android:fontFamily="@font/font"
+                android:focusable="false"/>
+
+            <EditText
+                android:id="@+id/last_service"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/textbox"
+                android:hint="Date of last service (Int/Ext)"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:paddingLeft="16dp"
+                android:fontFamily="@font/font"
+                android:focusable="false"/>
+
+            <EditText
+                android:id="@+id/tyreCheck"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/textbox"
+                android:hint="Date of tyre check + wheel alignment"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:paddingLeft="16dp"
+                android:fontFamily="@font/font"
+                android:focusable="false"/>
+
+            <EditText
+                android:id="@+id/battery_check"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/textbox"
+                android:hint="Date of last battery check"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:fontFamily="@font/font"
+                android:paddingLeft="16dp"
+                android:focusable="false"/>
+
+            <EditText
+                android:id="@+id/engine_tuneup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/textbox"
+                android:hint="Date of last engine tune up"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:paddingLeft="16dp"
+                android:fontFamily="@font/font"
+                android:focusable="false"/>
+
+            <EditText
+                android:id="@+id/shock"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/textbox"
+                android:hint="Date of shock absorber check"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:fontFamily="@font/font"
+                android:paddingLeft="16dp"
+                android:focusable="false"/>
+
+            <EditText
+                android:id="@+id/fluid_coolent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/textbox"
+                android:hint="Date of hydraulic fluid, coolant check"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:fontFamily="@font/font"
+                android:paddingLeft="16dp"
+                android:focusable="false"/>
+
+<!--            <EditText-->
+<!--                android:id="@+id/transmission_fluid"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:layout_marginLeft="16dp"-->
+<!--                android:layout_marginRight="16dp"-->
+<!--                android:background="@drawable/textbox"-->
+<!--                android:hint="Date of last transmission fluid check"-->
+<!--                android:paddingLeft="16dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textColorHint="@color/gray"-->
+<!--                android:fontFamily="@font/font"-->
+<!--                android:focusable="false"/>-->
+
+            <EditText
+                android:id="@+id/steering_fluid"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/textbox"
+                android:hint="Date of last steering fluid level check"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:fontFamily="@font/font"
+                android:paddingLeft="16dp"
+                android:focusable="false"/>
+
+            <EditText
+                android:id="@+id/technical_visit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/textbox"
+                android:hint="Date of last technical visit"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:fontFamily="@font/font"
+                android:paddingLeft="16dp"
+                android:focusable="false"/>
+
+            <EditText
+                android:id="@+id/wiper_blade"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/textbox"
+                android:hint="Date of replacement of wiper blades"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:fontFamily="@font/font"
+                android:paddingLeft="16dp"
+                android:focusable="false"/>
+
+            <EditText
+                android:id="@+id/lights"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/textbox"
+                android:hint="Date of head and brake light check"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:fontFamily="@font/font"
+                android:paddingLeft="16dp"
+                android:focusable="false"/>
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Save Vehicle"
+                android:background="@drawable/buttonback"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="@font/font"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
